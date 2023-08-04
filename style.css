@@ -1,0 +1,6 @@
+.navbar{
+    background: linear-gradient(green,white);
+    align-items: center;
+    align-content: space-between;
+    text-justify: inter-cluster;
+}
