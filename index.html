@@ -1,26 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>MusiFy</title>
-</head>
-<body>
-    <div class="navbar">
-        <div class="left">
-            <p>Welcome to MusiFy</p>
-        </div>
-        <div class="right"><ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul></div>    
-    </div>
-    
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, labore tempora architecto libero nostrum a, cupiditate animi accusantium suscipit nulla magnam eum explicabo dolore fugiat? Nemo, enim ullam cumque odio, ipsa ipsum voluptates deserunt exercitationem laudantium eveniet amet soluta ab?</p>
 
-    <script src="script.js"></script>
+<head>
+    <title>Spotify</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="App">
+
+        <!-- top bar for the app -->
+        <div class="App__top-bar">
+            <div class="App__header">
+                <div class="App__song-navigation">
+                    <div class="App__song-navigation-prev">
+                        <img src="images/backward.png" alt="">
+                        
+                    </div>
+                    <div class="App__song-navigation-next">
+                        <img src="images/forward.png" alt="">
+                    </div>
+                </div>
+                <button class="App__user">
+                    <div class="App__figure">
+                        <img src="images/profile.png" alt="" srcset="" style="width: 25px;
+                        height: 25px ">
+                    </div>
+                    <span class="App__username">Ajeet</span>
+                    <div class="App__expand-arrow">
+                        <img src="images/down.png" alt="" srcset="">
+                    </div>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="App__nav-bar">
+
+            <!-- logo of spotify -->
+            <div class="App__logo">
+                <img src="images/Spotify logo.png" alt="" srcset="" style="width: 140px;">
+            </div>
+
+            <div class="App__categories-nav">
+                <div class="App__category-item App__category-item--selected">
+                    <div class="icon">
+                        <img src="images/Home.png" alt="" srcset="">
+                    </div>
+                    <span>Home</span>
+                </div>
+
+                <!-- search bar -->
+                <div class="App__category-item">
+                    <div class="icon"><img src="images/Search.png" alt="" srcset="">
+                    </div>
+                    <span>Search</span>
+                </div>
+
+                <!-- library bar -->
+                <div class="App__category-item">
+                    <div class="icon">
+                        <img src="images/Your library.png" alt="" srcset="">
+                    </div>
+                    <span>Your Library</span>
+                </div>
+            </div>
+            <div class="App__playlists-nav">
+                <div class="App__category-item">
+                    <div class="icon">
+                        <img src="images/plus.png" alt="" srcset="">
+                    </div>
+                    <span>Create Playlist</span>
+                </div>
+                <div class="App__category-item">
+                    <div class="icon">
+                        <img src="images/liked song.png" alt="" srcset="">
+                    </div>
+                    <span>Liked Songs</span>
+                </div>
+                <div class="App__category-item">
+                    <div class="icon">
+                        <img src="images/your episode.png" alt="" srcset="">
+                    </div>
+                    <span>Your Episodes</span>
+                </div>
+            </div>
+
+            <div class="fav">
+                <div><a href="#"></a><span>FAV</span></div>
+                <div><a href="#"></a><span>My favorite</span></div>
+                <div><a href="#"></a><span>Hip Hop Mix</span></div>
+                <div><a href="#"></a><span>Metallic </span></div>
+                <div><a href="#"></a><span>Uranus</span></div>
+                <div><a href="#"></a><span>Uranus</span></div>
+                <div><a href="#"></a><span>Uranus</span></div>
+                <div><a href="#"></a><span>Uranus</span></div>
+            </div>
+
+            <div class="App__category-item">
+                <a href="#"><img src="images/download.png"><span style="position: absolute;padding-bottom: 20px; padding-left: 20px; padding-top: 5px; color: aliceblue;">install App</span></a>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="App__now-playing-bar">
+            <div class="function">
+                <div class="music">
+                    <img src="images/dreaming on.png" style="height: 40px; width: 40px;" />
+                    <div class="details">
+                        <div class="name">Dreaming on</div>
+                        <div class="artist">NETFLIX</div>
+                    </div>
+                    <div class="love">
+                        <img src="images/heart.png" alt="love" />
+                    </div>
+                </div>
+                <div class="playback">
+                    <div class="upper">
+                        <img src="images/shuffle.png" alt="shuffle" />
+                        <img src="images/previous.png" alt="back" />
+                        <img src="images/play-button.png" alt="play" class="play"/>
+                        <img src="images/next.png" alt="forward" />
+                        <img src="images/exchange.png" alt="loop" />
+                    </div>
+                    <div class="lower">
+                        <div class="text">0:00</div>
+                        <div class="line"></div>
+                        <div class="text">3:46</div>
+                    </div>
+                </div>
+                <div class="control">
+                    <div class="images">
+                        <img src="images/mic.png" alt="">
+                        <img src="images/playlist.png" alt="">
+                        <img src="images/device.png" alt="">
+                        <img src="images/volume.png" alt="">
+                        <img src="images/level.png" alt="">
+                        <img src="images/stretch.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- entire right hand section of app -->
+        <div class="App__main-view">
+            <div class="App__top-gradient"></div>
+            <div class="App__header-placeholder"></div>
+            <section class="App__section App__quick-links">
+                <h1>Good Morning<h1></h1>
+                    <div class="App__quick-links-container">
+                        <div class="App__quick-link">
+                            <div class="App__quick-link-featured-img"
+                                style="align-content: center; padding-left: 30px;">&#x02665;</div>
+                            <span>Liked Songs</span>
+                        </div>
+                        <div class="App__quick-link">
+                            <div class="App__quick-link-featured-img">
+                                <img src="images/man.png" alt="" style="height: 80px; width: 80px;">
+                            </div>
+                            <span>Netflix Playlist</span>
+                        </div>
+                        <div class="App__quick-link">
+                            <div class="App__quick-link-featured-img"><img src="images/KDA.png" alt=""
+                                    style="height: 80px; width: 80px;"></div>
+                            <span>K/ DA</span>
+                        </div>
+                        <div class="App__quick-link">
+                            <div class="App__quick-link-featured-img"><img src="images/marshmellow.png" alt=""
+                                    style="height: 80px; width: 80px;"></div>
+                            <span>Dance/ Electronic Mix</span>
+                        </div>
+
+                    </div>
+            </section>
+
+            <!-- main section where shows are kept  -->
+            <section class="App__section App__your-shows">
+                <div class="App__section-header">
+                    <h3>Shows You Might Like</h3>
+                    <span>SEE ALL</span>
+                </div>
+                <div class="App__section-grid-container">
+                    <div class="App__section-grid-item">
+                        <div class="featured-image"><img src="images/img1.png" alt="" style="width: 160px;"></div>
+                        <h3>Weekly Motivation</h3>
+                        <span>Useless Artist</span>
+                    </div>
+                    <div class="App__section-grid-item">
+                        <div class="featured-image"><img src="images/img1.png" alt="" style="width: 160px;"></div>
+                        <h3>Meditation self</h3>
+                        <span>Useless Artist</span>
+                    </div>
+                    <div class="App__section-grid-item">
+                        <div class="featured-image"><img src="images/img1.png" alt="" style="width: 160px;"></div>
+                        <h3>Words beyond action</h3>
+                        <span>Useless Artist</span>
+                    </div>
+                    <div class="App__section-grid-item">
+                        <div class="featured-image"><img src="images/img1.png" alt="" style="width: 160px;"></div>
+                        <h3>The alexa Show</h3>
+                        <span>Useless Artist</span>
+                    </div>
+                    <div class="App__section-grid-item">
+                        <div class="featured-image"><img src="images/img1.png" alt="" style="width: 160px;"></div>
+                        <h3>The alexa Show</h3>
+                        <span>Useless Artist</span>
+                    </div>
+                    <div class="App__section-grid-item">
+                        <div class="featured-image"><img src="images/img1.png" alt="" style="width: 160px;"></div>
+                        <h3>The alexa Show</h3>
+                        <span>Useless Artist</span>
+                    </div>
+                    <div class="App__section-grid-item">
+                        <div class="featured-image"><img src="images/img1.png" alt="" style="width: 160px;"></div>
+                        <h3>The alexa Show</h3>
+                        <span>Useless Artist</span>
+                    </div>
+                    <div class="App__section-grid-item">
+                        <div class="featured-image"><img src="images/img1.png" alt="" style="width: 160px;"></div>
+                        <h3>The alexa Show</h3>
+                        <span>Useless Artist</span>
+                    </div>
+                    <div class="App__section-grid-item">
+                        <div class="featured-image"><img src="images/img1.png" alt="" style="width: 160px;"></div>
+                        <h3>The alexa Show</h3>
+                        <span>Useless Artist</span>
+                    </div>
+                    <div class="App__section-grid-item">
+                        <div class="featured-image"><img src="images/img1.png" alt="" style="width: 160px;"></div>
+                        <h3>The alexa Show</h3>
+                        <span>Useless Artist</span>
+                    </div>
+                    <div class="App__section-grid-item">
+                        <div class="featured-image"><img src="images/img1.png" alt="" style="width: 160px;"></div>
+                        <h3>The alexa Show</h3>
+                        <span>Useless Artist</span>
+                    </div>
+                    <div class="App__section-grid-item">
+                        <div class="featured-image"><img src="images/img1.png" alt="" style="width: 160px;"></div>
+                        <h3>The alexa Show</h3>
+                        <span>Useless Artist</span>
+                    </div>
+                    <div class="App__section-grid-item">
+                        <div class="featured-image"><img src="images/img1.png" alt="" style="width: 160px;"></div>
+                        <h3>The alexa Show</h3>
+                        <span>Useless Artist</span>
+                    </div>
+                </div>
+            </section>
+            <section class="App__section App__your-shows">
+
+                <div class="App__section-grid-container">
+                    <div class="App__section-grid-item">
+                        <div class="featured-image"><img src="images/img1.png" alt="" style="width: 160px;"></div>
+                        <h3>The alexa Show</h3>
+                        <span>Useless Artist</span>
+                    </div>
+                    <div class="App__section-grid-item">
+                        <div class="featured-image"><img src="images/img1.png" alt="" style="width: 160px;"></div>
+                        <h3>The alexa Show</h3>
+                        <span>Useless Artist</span>
+                    </div>
+                    <div class="App__section-grid-item">
+                        <div class="featured-image"><img src="images/img1.png" alt="" style="width: 160px;"></div>
+                        <h3>The alexa Show</h3>
+                        <span>Useless Artist</span>
+                    </div>
+                    <div class="App__section-grid-item">
+                        <div class="featured-image"><img src="images/img1.png" alt="" style="width: 160px;"></div>
+                        <h3>The alexa Show</h3>
+                        <span>Useless Artist</span>
+                    </div>
+                    <div class="App__section-grid-item">
+                        <div class="featured-image"><img src="images/img1.png" alt="" style="width: 160px;"></div>
+                        <h3>The alexa Show</h3>
+                        <span>Useless Artist</span>
+                    </div>
+                    <div class="App__section-grid-item">
+                        <div class="featured-image"><img src="images/img1.png" alt="" style="width: 160px;"></div>
+                        <h3>The alexa Show</h3>
+                        <span>Useless Artist</span>
+                    </div>
+                    <div class="App__section-grid-item">
+                        <div class="featured-image"><img src="images/img1.png" alt="" style="width: 160px;"></div>
+                        <h3>The alexa Show</h3>
+                        <span>Useless Artist</span>
+                    </div>
+                    <div class="App__section-grid-item">
+                        <div class="featured-image"><img src="images/img1.png" alt="" style="width: 160px;"></div>
+                        <h3>The alexa Show</h3>
+                        <span>Useless Artist</span>
+                    </div>
+                    <div class="App__section-grid-item">
+                        <div class="featured-image"><img src="images/img1.png" alt="" style="width: 160px;"></div>
+                        <h3>The alexa Show</h3>
+                        <span>Useless Artist</span>
+                    </div>
+                    <div class="App__section-grid-item">
+                        <div class="featured-image"><img src="images/img1.png" alt="" style="width: 160px;"></div>
+                        <h3>The alexa Show</h3>
+                        <span>Useless Artist</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
 </body>
+
 </html>
